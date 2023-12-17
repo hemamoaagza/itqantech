@@ -158,11 +158,28 @@ p {
 .macpro {
   width: 50%;
 }
-@media (max-width: 992px) {
+@media (max-width: 850px) {
   #press-section {
-    height: 60vh;
+    height: 53vh;
+  }
+  .mapa {
+    width: 100%;
   }
 }
+@media (min-width: 851px) {
+  #press-section {
+    height: 64vh;
+  }
+  .mapa {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  #press-section {
+    height: 88vh;
+  }
+}
+
 /* logos-section */
 
 #logos-section {
