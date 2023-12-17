@@ -59,6 +59,7 @@ body {
   display: inline-block;
   margin-bottom: 8px;
 }
+/* media that fit mobile devices */
 @media (max-width: 992px) {
   .navbar-nav {
     position: absolute;
@@ -158,10 +159,15 @@ p {
 .macpro {
   width: 50%;
 }
-@media (max-width: 850px) {
+@media (min-width: 800px) {
   #press-section {
     height: 53vh;
   }
+  .mapa {
+    width: 100%;
+  }
+}
+@media (max-width: 850px) {
   .mapa {
     width: 100%;
   }
