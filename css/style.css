@@ -59,6 +59,7 @@ body {
   display: inline-block;
   margin-bottom: 8px;
 }
+/* media that fit mobile devices */
 @media (max-width: 992px) {
   .navbar-nav {
     position: absolute;
@@ -158,14 +159,37 @@ p {
 .macpro {
   width: 50%;
 }
-@media (max-width: 992px) {
+@media (min-width: 501px) {
+  .mapa {
+    width: 100%;
+  }
   #press-section {
-    height: 60vh;
+    height: 52vh;
+  }
+}
+@media (min-width: 800px) {
+  #press-section {
+    height: 53vh;
   }
   .mapa {
     width: 100%;
   }
 }
+
+@media (min-width: 851px) {
+  #press-section {
+    height: 64vh;
+  }
+  .mapa {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  #press-section {
+    height: 88vh;
+  }
+}
+
 /* logos-section */
 
 #logos-section {
@@ -176,6 +200,30 @@ p {
 .logos {
   padding: 50px 20px;
   width: 13%;
+}
+
+@media (max-width: 900px) {
+  .logos {
+    width: 30%;
+  }
+  .mapa {
+    width: 100%;
+  }
+  #press-section {
+    height: 52vh;
+  }
+  .mainh1 {
+    font-size: 2rem;
+  }
+  .title-img {
+    width: 80%;
+  }
+  .btn-group-lg > .btn,
+  .btn-lg {
+    --bs-btn-padding-y: 0.6;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-font-size: 1rem;
+  }
 }
 
 /* pricing */
@@ -195,6 +243,7 @@ p {
   font-weight: bold;
   font-size: 2.5rem;
 }
+
 .h3-pricing {
   color: rgb(0, 0, 0);
   font-family: "Ubuntu";
@@ -220,7 +269,22 @@ p {
 .card-container {
   padding: 5%;
 }
+@media (max-width: 500px) {
+  .h3-pricing {
+    font-size: 1.3rem;
+  }
+  .h2-pricing {
+    font-size: 1.3rem;
+  }
+  .h2-pricing-head {
+    line-height: 1.5;
 
+    font-size: 2rem;
+  }
+  .p-p {
+    font-size: 0.9rem;
+  }
+}
 @media (max-width: 990px) {
   #title {
     text-align: center;
@@ -228,7 +292,6 @@ p {
   .nav-item {
     display: inline;
   }
-  
 }
 
 /* footer  */
@@ -287,4 +350,15 @@ a {
 a:hover {
   cursor: pointer;
   color: rgb(128, 0, 11);
+}
+
+@media (max-width: 500px) {
+  .h3-contact {
+    font-size: 1.5rem;
+  }
+  .p-c {
+    color: #fff;
+    font-family: "ubuntu";
+    font-size: 1rem;
+  }
 }
