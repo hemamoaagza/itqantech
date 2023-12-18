@@ -43,7 +43,7 @@
           <span></span>
         </div>
         <!-- to select the ul for right side nav items  -->
-        <ul id="navanimate" class="navbar-nav ms-auto">
+        <ul id="navanimate" class="navbar-nav ms-auto" onclick="remove()">
           <li class="nav-item">
             <a class="nav-link" href="#features">About</a>
           </li>
@@ -311,6 +311,10 @@
     function myfunction() {
       var navbtn = document.querySelector("#navanimate");
       navbtn.classList.toggle("show");
+    }
+    function remove() {
+      var navbtn = document.querySelector("#navanimate");
+      navbtn.classList.remove("show");
     }
   </script>
   <script
